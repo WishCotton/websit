@@ -1,0 +1,90 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body {
+    background-color:black;
+    margin: 0px; /* Often browsers have a 5px margin by deafult*/
+    font-family: sans-serif;
+}
+
+section{
+	max-width: 500px;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header {
+    font-family: 'Bungee Outline', cursive;
+    background-color: black;
+    color: lightGrey; /* more readable on an orange background */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+nav {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 60px;
+
+}
+
+nav a, nav h3{
+	float: left;
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+}
+
+    nav a:hover {
+        background-color: red;
+        text-decoration: underline; /* Hover styles to let people know they can click it */
+        color: blue;
+    }
+
+
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	float: left;
+}
+
+.g-30{
+	width: 20%;
+	float: left;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px; /* I add this to cells to add a little padding*/
+}
